@@ -19,7 +19,7 @@ namespace Inlamning1
 
                 if (input =="k")
                 {
-                Random randomNumber = new Random();
+                    Random randomNumber = new Random();
 
                     int dice1 = randomNumber.Next(1, 7);
                     int dice2 = randomNumber.Next(1, 7);
