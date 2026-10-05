@@ -21,19 +21,19 @@ namespace Inlamning1
                 {
                 Random randomNumber = new Random();
 
-                    int dice = randomNumber.Next(1, 7);
+                    int dice1 = randomNumber.Next(1, 7);
                     int dice2 = randomNumber.Next(1, 7);
-                    Console.WriteLine($"{dice}, {dice2}");
+                    Console.WriteLine($"{dice1} | {dice2}");
 
-                        if (dice + dice2 == 12)
+                        if (dice1 + dice2 == 12)
                         {
                             Console.WriteLine("Grattis, du vann!");
                             Console.WriteLine("-----------------------------");
-                            Console.WriteLine("Vill du spela igen? | Tryck k | Avsluta med x");
+                            Console.WriteLine("Vill du spela igen? -> Tryck k | Avsluta med x");
                         }
                         else
                         {
-                            Console.WriteLine("Tyvärr ingen vinst, vill du spela igen? | Tryck k | Avsluta med x");
+                            Console.WriteLine("Tyvärr ingen vinst, vill du spela igen? -> Tryck k | Avsluta med x");
                         }
                 }
                 
