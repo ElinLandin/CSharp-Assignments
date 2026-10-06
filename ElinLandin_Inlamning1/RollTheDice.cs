@@ -41,13 +41,13 @@ namespace Inlamning1
                                 Console.WriteLine("Tyvärr ingen vinst, vill du spela igen? -> Tryck k | Avsluta med x");
                             }
 
-                break;
+                    break;
                 
                 case "x":
 
                     Console.WriteLine("Avslutar");
                 
-                break;
+                    break;
                 
             }
         }
