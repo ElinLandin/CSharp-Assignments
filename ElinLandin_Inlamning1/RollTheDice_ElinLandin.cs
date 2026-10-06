@@ -31,14 +31,14 @@ namespace Inlamning1
 
                             if (dice1 + dice2 == 12)
                             {
-                                Console.WriteLine("Grattis, du vann!");
+                                Console.WriteLine("Grattis, du har vunnit!");
                                 Console.WriteLine("-----------------------------");
-                                Console.WriteLine("Vill du spela igen? -> Tryck k | Avsluta med x");
+                                Console.WriteLine("Vill du spela igen? | Ja ->  k | Nej ->  x |");
                             }
 
                             else
                             {
-                                Console.WriteLine("Tyvärr ingen vinst, vill du spela igen? -> Tryck k | Avsluta med x");
+                                Console.WriteLine("Tyvärr ingen vinst, vill du spela igen? | Ja ->  k | Nej ->  x |");
                             }
 
                     break;
