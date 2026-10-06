@@ -11,41 +11,48 @@ namespace Inlamning1
             Console.WriteLine("Tryck k för att kasta tärningarna, avsluta med x");
             Console.WriteLine("------------------------------------------------------");
    
-
-        while(true)
-            {
+            string? input = "";
+            
+        do
+        {
                 
-                string? input = Console.ReadLine();
+            input = Console.ReadLine();
 
-                if (input =="k")
-                {
+            switch (input)
+            {
+                case "k":
+
                     Random randomNumber = new Random();
 
                     int dice1 = randomNumber.Next(1, 7);
                     int dice2 = randomNumber.Next(1, 7);
+                    
                     Console.WriteLine($"{dice1} | {dice2}");
 
-                        if (dice1 + dice2 == 12)
-                        {
-                            Console.WriteLine("Grattis, du vann!");
-                            Console.WriteLine("-----------------------------");
-                            Console.WriteLine("Vill du spela igen? -> Tryck k | Avsluta med x");
-                        }
-                        else
-                        {
-                            Console.WriteLine("Tyvärr ingen vinst, vill du spela igen? -> Tryck k | Avsluta med x");
-                        }
-                }
+                            if (dice1 + dice2 == 12)
+                            {
+                                Console.WriteLine("Grattis, du vann!");
+                                Console.WriteLine("-----------------------------");
+                                Console.WriteLine("Vill du spela igen? -> Tryck k | Avsluta med x");
+                            }
+
+                            else
+                            {
+                                Console.WriteLine("Tyvärr ingen vinst, vill du spela igen? -> Tryck k | Avsluta med x");
+                            }
+
+                break;
                 
-                else if (input == "x")
-                {
+                case "x":
+
                     Console.WriteLine("Avslutar");
-                    break;
-                }
+                
+                break;
                 
             }
-
-       }
+        }
+        while(input != "x");
+        }
     }
 }
 
