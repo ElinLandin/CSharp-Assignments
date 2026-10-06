@@ -11,7 +11,7 @@ namespace Inlamning1
             Console.WriteLine("Tryck k för att kasta tärningarna, avsluta med x");
             Console.WriteLine("------------------------------------------------------");
    
-            string? input = "";
+            string? input;
             
         do
         {
@@ -38,7 +38,7 @@ namespace Inlamning1
 
                             else
                             {
-                                Console.WriteLine("Tyvärr ingen vinst, vill du spela igen? | Ja ->  k | Nej ->  x |");
+                                Console.WriteLine("Tyvärr ingen vinst. Vill du spela igen? | Ja ->  k | Nej ->  x |");
                             }
 
                     break;
